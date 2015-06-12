@@ -1,0 +1,11 @@
+.blackbox {
+		display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+#mc_embed_signup {
+	clear:left; 
+	font:14px Helvetica,Arial,sans-serif; 
+}
