@@ -1,8 +1,0 @@
-Your database "sonicalliance" has been created!
-
-Your hostname "mysql.sonicalliance.co" will be set up within about 5-10 minutes.
-You MUST always use your hostname to connect to your database... "localhost" WILL NOT WORK.
-
-Connect to your new database from the command line with:
-mysql -u hamkar3 -p -h mysql.sonicalliance.co sonicalliance 
-You can also go to http://mysql.sonicalliance.co/ to manage your MySQL database from the web (once the hostname is set up of course).
