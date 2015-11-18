@@ -1,1 +1,3 @@
-/tmp/assets/*
+/.bundle
+/log/*.log
+/tmp
