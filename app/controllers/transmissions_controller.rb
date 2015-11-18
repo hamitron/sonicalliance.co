@@ -1,12 +1,19 @@
 class TransmissionsController < ApplicationController
+	include TransmissionsHelper
+
+	def index
+		@transmissions = Transmission.all
+	end
 	
 	def new
-		@transmission = Transmission.new(uid: generate_uid, codename: generate_code_name)
+		uid = generate_uid
+		code = generate_code_name
+		@transmission = Transmission.new(uid: uid, codename: code)
 	end
 
 	def create
-		@transmission = Transmission.new(transmission_params)
-		if @transmission.save?
+		@transmission = Transmission.create(transmission_params)
+		if @transmission
 			redirect_to root_path
 		else
 			render 'new'
