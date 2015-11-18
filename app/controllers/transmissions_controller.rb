@@ -1,5 +1,6 @@
 class TransmissionsController < ApplicationController
 	include TransmissionsHelper
+	http_basic_authenticate_with name:"admin", password: "admin", except: :index #wifi router defaults.
 
 	def index
 		@transmissions = Transmission.all
@@ -14,14 +15,13 @@ class TransmissionsController < ApplicationController
 	def create
 		@transmission = Transmission.create(transmission_params)
 		if @transmission
-			redirect_to root_path
+			redirect_to transmissions_path
 		else
 			render 'new'
 		end
 	end
 
 	def edit
-		
 	end
 
 	private
