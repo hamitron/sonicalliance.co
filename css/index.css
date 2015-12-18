@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+
+html, body{
+  height:100%;
+  background-color: #595551;
+  color: #A3BFA3;
+  font-family: 'Inconsolata', sans-serif;
+  font-weight: 100;
+}
+
+#main-page {
+	width: 100%;
+	height: 100%;
+	display: table;
+	position: relative;
+}
+
+.logo-box {
+	margin: 10% auto;
+}
+
+.navbar-brand {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 2em;
+	font-weight: 100;
+}
+/*.sa-logo {
+	background-image: url('');
+	background-position: center; 
+	background-repeat: no-repeat;
+}*/
+
+.sa-text {
+	position: relative;
+	top: 3em;
+	font-family: 'Inconsolata', sans-serif;
+	text-align: center;
+	color: #A3BFA3;
+	z-index: 1;
+}
+
+h1 {
+	font-size: 10em;
+	font-weight: 100;
+}
+
+h2 {
+	font-size: 100pt;
+}
+
+h3 {
+	font-size:45pt;
+}
+
