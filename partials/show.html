@@ -1,0 +1,21 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{projectShow.label}}</h3>
+    </div>
+    <div class="panel-body">
+      <div class="col-md-3">
+        DIRECTOR
+        <h4>{{projectShow.directors}}</h4>
+        LOCATION
+        <h4>{{projectShow.project_location}}</h4>
+        TYPE
+        <h4>{{projectShow.project_type.label}}</h4>
+      </div>
+      <div class="col-md-9">
+        <ul>
+          <li ng-repeat="role in projectShow.roles">{{role.label}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
