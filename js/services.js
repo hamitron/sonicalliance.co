@@ -6,5 +6,9 @@ sonicAllianceServices
     	// can be a json file (its in the directory)
     	return $resource('./mainContent.json');
   	}])
+	.factory('locationEntry', ['$resource', function($resource){
+    	// can be a json file (its in the directory)
+    	return $resource('./locationEntry/:pid.json', {pid:'@pid'});
+  	}])
  
 

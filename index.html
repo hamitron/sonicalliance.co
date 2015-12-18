@@ -11,26 +11,6 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
   </head>
   <body ng-controller="mainCtrl">
-<!--     <nav class="navbar navbar-inverse">
-
-        <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sonic-navbar-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">sonic alliance</a>
-    </div>
-
-
-    <div class="collapse navbar-collapse" id="sonic-navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Link <span class="sr-only">(current)</span></a></li>
-      </ul>
-     </div>
-
-</nav> -->
     <div class="container-fluid">
       <div class="row">
         <div id="main-page">
@@ -40,11 +20,33 @@
                 <h1>{{title}}</h1>
                 <p>{{bodyContent}}</p>
               </div>
-    
             </div>
           </div>
         </div>
       </div>
+      <div class="container" ng-controller="locationEntryCtrl">
+      <div class="row">
+        <div ng-show="showEntry" class="panel panel-default">
+        <h4>Entry</h4>
+        <div class="panel panel-default">
+              <div class="panel-heading">
+                 <h3 class="panel-title">{{entry.code}}</h3>
+               </div>
+              <div class="panel-body">
+                <div class="col-md-12">
+                  PRICE
+                  <h4>{{entry.price}}</h4>
+                  LOCATION
+                  <h4>{{entry.lat}}</h4>
+                  <h4>{{entry.long}}</h4>
+                  INFORMATION
+                  <h4>{{entry.content}}</h4>
+                </div>
+              </div>
+          </div>
+        </div>
+        </div>
+    </div>
     </div>
   </body>
 </html>
