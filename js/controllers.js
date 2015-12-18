@@ -15,8 +15,9 @@ sonicAllianceControllers
 	  		}
 	  	);
 		}
-	)
-	.controller('locationEntryCtrl', function($scope, locationEntry){
+	);
+
+sonicAllianceControllers.controller('locationEntryCtrl', function($scope, locationEntry){
     // view project details
   	$scope.setId = function(id){
     	locationEntry

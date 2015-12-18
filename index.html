@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
   </head>
   <body ng-controller="mainCtrl">
-    <div class="container-fluid">
+    <div class="container-fluid" ng-controller="locationEntryCtrl">
       <div class="row">
         <div id="main-page">
           <div class="container">
@@ -19,29 +19,22 @@
               <div class="sa-text">
                 <h1>{{title}}</h1>
                 <p>{{bodyContent}}</p>
+                <a ng-href="#" ng-click="setId(1)">set</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="container" ng-controller="locationEntryCtrl">
+      <div class="container">
       <div class="row">
         <div ng-show="showEntry" class="panel panel-default">
         <h4>Entry</h4>
         <div class="panel panel-default">
               <div class="panel-heading">
-                 <h3 class="panel-title">{{entry.code}}</h3>
+              <h1 class="panel-title"> dafuq</h1>
                </div>
               <div class="panel-body">
-                <div class="col-md-12">
-                  PRICE
-                  <h4>{{entry.price}}</h4>
-                  LOCATION
-                  <h4>{{entry.lat}}</h4>
-                  <h4>{{entry.long}}</h4>
-                  INFORMATION
-                  <h4>{{entry.content}}</h4>
-                </div>
+                 <p>{{entry}}</p>
               </div>
           </div>
         </div>
